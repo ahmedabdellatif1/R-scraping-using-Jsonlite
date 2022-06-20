@@ -66,6 +66,8 @@ results%>%group_by(country,region)%>%summarize(mean_score= mean(score))%>%ungrou
   theme(axis.text.y = element_text(size = 7)) +
   xlab("")
 ```
+![image](https://user-images.githubusercontent.com/36051221/174509130-8e1a9899-f628-4231-b4fe-bb738b025d17.png)
+
 
 
 we can also see the change of the score of each of top 20 universities of **2018** in **2022**   
@@ -94,3 +96,4 @@ geom_label(aes(label=`2018`,x="2018",y=`2018`), size = 2.5,nudge_x =- 0.08)+
 ylab("score") +xlab("year")
 
 ```
+![image](https://user-images.githubusercontent.com/36051221/174509288-da2605a8-65ae-4230-a999-5202a5b77b08.png)
